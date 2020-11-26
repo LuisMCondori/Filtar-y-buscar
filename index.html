@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filtrar Buscar</title>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="/styles/main.css">
+
+</head>
+<body>
+    <h1>Buscador de Autos</h1>
+
+    <div class="contenedor">
+        <form id="buscador" action="">                            
+                <div class="display_flex">
+                    <div class="column"><!-- ------ Marca ------ -->
+                        <label for="marca">Marca</label>
+                        <select class="u-full-width" id="marca">
+                            <option value="">Seleccione</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Mercedes Benz">Mercedes Benz</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Dodge">Dodge</option>                        
+                        </select>
+                    </div><!-- ---x--- Marca ---x--- -->
+    
+                    <div class="column"><!-- ------ Año ------ -->
+                        <label for="year">Año</label>
+                        <select id="year">
+                            <option value="">Seleccione</option>
+                        </select>
+                    </div><!-- ---x--- Año ---x--- -->
+    
+                    <div class="column"><!-- ------ Premio Min ------ -->
+                        <label for="minimo">Precio Min</label>
+                        <select id="minimo">
+                            <option value="">Seleccione</option>
+                            <option value="20000">20,000</option>
+                            <option value="30000">30,000</option>
+                            <option value="40000">40,000</option>
+                            <option value="50000">50,000</option>
+                            <option value="60000">60,000</option>
+                            <option value="70000">70,000</option>
+                            <option value="80000">80,000</option>
+                            <option value="90000">90,000</option>
+                        </select>
+                    </div><!-- ---x--- Precio Min ---x--- -->
+    
+                    <div class="column"><!-- ------ Precio Max ------ -->
+                        <label for="maximo">Precio Max</label>
+                        <select id="maximo">
+                            <option value="">Seleccione</option>
+                            <option value="20000">20,000</option>
+                            <option value="30000">30,000</option>
+                            <option value="40000">40,000</option>
+                            <option value="50000">50,000</option>
+                            <option value="60000">60,000</option>
+                            <option value="70000">70,000</option>
+                            <option value="80000">80,000</option>
+                            <option value="90000">90,000</option>
+                        </select>
+                    </div><!-- ---x--- Precio Max ---x--- -->
+                </div>
+
+                <div class="display_flex">
+                    <div class="column"><!-- ------ Puertas ------ -->
+                        <label for="puertas">Puertas</label>
+                        <select id="puertas">
+                            <option value="">Seleccione</option>
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div><!-- ---x--- Puertas ---x--- -->
+
+                    <div class="column"><!-- ------ Transmision ------ -->
+                        <label for="transmision">Transmision</label>
+                        <select id="transmision">
+                            <option value="">Seleccione</option>
+                            <option value="automatico">Automática</option>
+                            <option value="manual">Manual</option>    
+                        </select>
+                    </div><!-- ---x--- Transmision ---x--- -->
+                    
+                    <div class="column"><!-- ------ Color ------ -->
+                        <label for="color">Color</label>
+                        <select id="color">
+                            <option value="">Seleccione</option>
+                            <option value="Negro">Negro</option>
+                            <option value="Azul">Azul</option>
+                            <option value="Blanco">Blanco</option>
+                            <option value="Rojo">Rojo</option>
+                        </select>
+                    </div><!-- ---x--- Color ---x--- -->
+                </div>           
+        </form>
+
+        <h1>Resultados</h1>
+        <div id="resultado"></div>
+    </div>
+    <!-- Custom Javascript file -->
+    <script src="/scripts/db.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>
